@@ -1,3 +1,5 @@
+require 'ostruct'
+
 class DeepOpenStruct
   def self.load(item)
     raise ArgumentError, "DeepOpenStruct must be passed a Hash or Array" unless(item.is_a?(Hash) || item.is_a?(Array))
