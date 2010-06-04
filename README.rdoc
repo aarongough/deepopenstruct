@@ -8,8 +8,9 @@ DeepOpenStruct is a simple library for creating easy-to-use data structures from
   
 === Usage
 
+  require 'rubygems'
   require 'deepopenstruct'
-
+  
   complex_data = {
     :name => "Bob Winkle",
     :age => 65,
