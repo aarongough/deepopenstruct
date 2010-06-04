@@ -5,8 +5,8 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "deepopenstruct"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{A simple library for creating easy-to-use data structures from complex sets of nested Hashes and Arrays}
+    gem.description = %Q{DeepOpenStruct is a simple library for creating easy-to-use data structures from complex sets of nested Hashes and Arrays. It is particularly suitable for creating easy-to-use data structures from YAML files, and as such is a useful tool for creating simple reflective API wrappers.}
     gem.email = "aaron@aarongough.com"
     gem.homepage = "http://github.com/aarongough/deepopenstruct"
     gem.authors = ["Aaron Gough"]
