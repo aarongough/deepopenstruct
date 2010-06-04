@@ -22,6 +22,7 @@ Gem::Specification.new do |s|
      "README.rdoc",
      "Rakefile",
      "VERSION",
+     "deepopenstruct.gemspec",
      "lib/deepopenstruct.rb",
      "test/setup/test_unit_extensions.rb",
      "test/test_helper.rb",
