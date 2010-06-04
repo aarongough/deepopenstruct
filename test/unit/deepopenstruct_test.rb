@@ -57,4 +57,10 @@ class TestDeepOpenStruct < Test::Unit::TestCase
     end
   end
   
+  test "should not not create side effects" do
+    array = [{:hash_1 => 1}, {:hash_2 => 2}, {:hash_3 => 3}]
+    deepstruct = DeepOpenStruct.load(array)
+    assert_kind_of Hash, array[0]
+  end
+  
 end
