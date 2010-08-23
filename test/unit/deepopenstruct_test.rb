@@ -70,4 +70,16 @@ class TestDeepOpenStruct < Test::Unit::TestCase
     assert_kind_of Hash, hash[:array][2][:array][2]
   end
   
+  test "should allow overriding of :id" do
+    hash = {:id => "blah"}
+    deepstruct = DeepOpenStruct.load(hash)
+    assert_equal "blah", deepstruct.id
+  end
+  
+  test "should allow overriding of :type" do
+    hash = {:type => "blah"}
+    deepstruct = DeepOpenStruct.load(hash)
+    assert_equal "blah", deepstruct.type
+  end
+  
 end

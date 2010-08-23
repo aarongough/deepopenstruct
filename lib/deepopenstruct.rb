@@ -1,5 +1,15 @@
 require 'ostruct'
 
+class PatchedOpenStruct < OpenStruct
+  def id
+    @table[:id]
+  end
+  
+  def type
+    @table[:type]
+  end
+end
+
 class DeepOpenStruct
   def self.load(item)
     raise ArgumentError, "DeepOpenStruct must be passed a Hash or Array" unless(item.is_a?(Hash) || item.is_a?(Array))
@@ -11,7 +21,7 @@ class DeepOpenStruct
           value
         end
       end
-      return OpenStruct.new(item)
+      return PatchedOpenStruct.new(item)
     elsif(item.is_a?(Array))
       return item.map do |value|
         if(value.is_a?(Hash) || value.is_a?(Array))
