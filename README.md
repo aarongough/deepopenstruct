@@ -1,3 +1,8 @@
+[![Ruby Style Guide](https://img.shields.io/badge/code_style-rubocop-brightgreen.svg)](https://github.com/rubocop/rubocop)
+[![Maintainability](https://api.codeclimate.com/v1/badges/6dde59f90537f386f3bd/maintainability)](https://codeclimate.com/github/aarongough/deepopenstruct/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/6dde59f90537f386f3bd/test_coverage)](https://codeclimate.com/github/aarongough/deepopenstruct/test_coverage)
+[![Gem Version](https://badge.fury.io/rb/deepopenstruct.svg)](https://badge.fury.io/rb/deepopenstruct)
+
 # DeepOpenStruct
 
 DeepOpenStruct is a simple library for creating easy-to-use data structures from complex sets of nested Hashes and Arrays. It is particularly suitable for creating easy-to-use data structures from YAML files, and as such is a useful tool for creating simple reflective API wrappers.
