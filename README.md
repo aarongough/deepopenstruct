@@ -1,4 +1,5 @@
 [![Ruby Style Guide](https://img.shields.io/badge/code_style-rubocop-brightgreen.svg)](https://github.com/rubocop/rubocop)
+[![Actions Status](https://github.com/aarongough/deepopenstruct/actions/workflows/build.yml/badge.svg)](https://github.com/aarongough/deepopenstruct/actions/workflows/build.yml)
 [![Maintainability](https://api.codeclimate.com/v1/badges/6dde59f90537f386f3bd/maintainability)](https://codeclimate.com/github/aarongough/deepopenstruct/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/6dde59f90537f386f3bd/test_coverage)](https://codeclimate.com/github/aarongough/deepopenstruct/test_coverage)
 [![Gem Version](https://badge.fury.io/rb/deepopenstruct.svg)](https://badge.fury.io/rb/deepopenstruct)
