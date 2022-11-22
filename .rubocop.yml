@@ -1,0 +1,27 @@
+Metrics/BlockLength:
+  IgnoredMethods: ['describe', 'context']
+
+Style/SymbolProc:
+  IgnoredMethods: ['configure']
+
+AllCops:
+  SuggestExtensions: false
+  NewCops: enable
+
+Lint/BooleanSymbol:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Metrics/AbcSize:
+  Max: 20
+
+Metrics/MethodLength:
+  Max: 15
+
+Metrics/CyclomaticComplexity:
+  Max: 10
+  
+Gemspec/RequireMFA:
+  Enabled: false
