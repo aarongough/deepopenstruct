@@ -4,7 +4,7 @@ require 'spec_helper'
 
 describe DeepOpenStruct do
   it 'converts hash into openstruct' do
-    hash = {item1: 1, item2: 2, 'item3': 3}
+    hash = { item1: 1, item2: 2, item3: 3 }
     deepstruct = DeepOpenStruct.load(hash)
 
     expect(deepstruct.item1).to eq(1)
@@ -13,7 +13,7 @@ describe DeepOpenStruct do
   end
 
   it 'converts array of hashes into array of openstructs' do
-    array = [{hash1: 1}, {hash2: 2}, {hash3: 3}]
+    array = [{ hash1: 1 }, { hash2: 2 }, { hash3: 3 }]
     deepstruct = DeepOpenStruct.load(array)
 
     expect(deepstruct[0].hash1).to eq(1)
@@ -50,34 +50,34 @@ describe DeepOpenStruct do
   end
 
   it 'raises ArgumentError if initialized with something other than a Hash or Array' do
-    expect {
+    expect do
       DeepOpenStruct.load(1)
-    }.to raise_error(ArgumentError)
+    end.to raise_error(ArgumentError)
   end
 
   it 'does not change source data when given Array' do
-    array = [{hash1: 1}, {hash2: 2}]
+    array = [{ hash1: 1 }, { hash2: 2 }]
 
-    expect { 
+    expect do
       DeepOpenStruct.load(array)
-    }.not_to change(array[0], :class)
+    end.not_to change(array[0], :class)
   end
 
   it 'does not change source data when given Hash' do
-    hash = {array: [1, 2]}
+    hash = { array: [1, 2] }
 
-    expect {
+    expect do
       DeepOpenStruct.load(hash)
-    }.not_to change(hash[:array], :class)
+    end.not_to change(hash[:array], :class)
   end
 
   it 'allows overriding of :id' do
-    deepstruct = DeepOpenStruct.load({id: :blah})
+    deepstruct = DeepOpenStruct.load({ id: :blah })
     expect(deepstruct.id).to eq(:blah)
   end
 
   it 'allows overriding of :type' do
-    deepstruct = DeepOpenStruct.load({type: :blah})
+    deepstruct = DeepOpenStruct.load({ type: :blah })
     expect(deepstruct.type).to eq(:blah)
   end
 end
