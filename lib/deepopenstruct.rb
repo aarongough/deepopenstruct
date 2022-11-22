@@ -11,6 +11,8 @@ class PatchedOpenStruct < OpenStruct
 end
 
 class DeepOpenStruct
+  VERSION = '0.1.3'
+
   def self.load(item)
     raise ArgumentError, "DeepOpenStruct must be passed a Hash or Array" unless(item.is_a?(Hash) || item.is_a?(Array))
     if(item.is_a?(Hash))
